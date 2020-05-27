@@ -1,8 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Conceptive Finance | Usługi Księgowe`,
+    description: `Prowadzenie ksiąg rachunkowych, obsługa kadrowo-płacowa, usługi doradcze`,
+    author: `Conceptive Finance`,
+    keywords: [
+      'biuro rachunkowe luboń',
+      'biuro rachunkowe poznań',
+      'księgowy luboń',
+      'księgowy poznań',
+      'kpir luboń',
+      'księgowy luboń',
+      'księgowość luboń',
+      'księgowość poznań',
+      'pieniądze',
+      'bejmy',
+      'spółki',
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -33,6 +46,7 @@ module.exports = {
         fonts: [
           {
             family: 'Lato',
+            subsets: ['latin-ext'],
             variants: ['400', '600', '700'],
           },
         ],
