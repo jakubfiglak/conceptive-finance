@@ -7,7 +7,7 @@ import Button from '../components/Button';
 
 const StyledBackgroundImage = styled(BackgroundImage)`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 `;
 
 const StyledContainer = styled.div`
@@ -16,6 +16,10 @@ const StyledContainer = styled.div`
   align-items: center;
   text-align: center;
   margin: 20rem 0;
+
+  @media screen and (max-width: 1024px) {
+    margin: 10rem 0;
+  }
 `;
 
 const StyledTitle = styled.h1`
@@ -24,6 +28,7 @@ const StyledTitle = styled.h1`
   font-weight: ${({ theme }) => theme.bold};
   color: ${({ theme }) => theme.colors.white};
   letter-spacing: 1rem;
+  max-width: 80%;
 `;
 
 const StyledDescription = styled.p`

@@ -6,6 +6,7 @@ const theme = {
     lightGray: '#fafafa',
     white: '#ffffff',
     black: '#000000',
+    blackTransparent: 'rgb(0,0,0,0.85)',
   },
   fontSize: {
     xxl: '7.2rem',
