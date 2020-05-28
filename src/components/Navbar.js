@@ -8,6 +8,10 @@ import Burger from './Burger';
 import MobileMenu from './MobileMenu';
 
 const StyledNav = styled.nav`
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,10 +20,20 @@ const StyledNav = styled.nav`
   @media screen and (max-width: 1024px) {
     padding: 3rem;
   }
+
+  @media screen and (max-width: 812px) and (orientation: landscape) {
+    padding: 1rem 3rem;
+  }
+`;
+
+const StyledLogo = styled.img`
+  @media screen and (max-width: 812px) {
+    width: 150px;
+  }
 `;
 
 const StyledContactButton = styled(Button)`
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 812px) {
     display: none;
   }
 `;
@@ -29,7 +43,7 @@ const Navbar = () => {
 
   return (
     <StyledNav>
-      <img src={logo} alt="Conceptive Finance Logo" />
+      <StyledLogo src={logo} alt="Conceptive Finance Logo" />
       <NavList />
       <StyledContactButton as={Link} to="#contact">
         Kontakt

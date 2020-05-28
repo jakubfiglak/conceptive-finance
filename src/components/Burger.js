@@ -41,7 +41,7 @@ const StyledBurger = styled.button`
     }
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 813px) {
     display: none;
   }
 `;

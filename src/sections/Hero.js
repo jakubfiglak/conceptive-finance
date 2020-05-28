@@ -6,6 +6,10 @@ import Navbar from '../components/Navbar';
 import Button from '../components/Button';
 
 const StyledBackgroundImage = styled(BackgroundImage)`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   min-height: 100vh;
 `;
@@ -15,11 +19,6 @@ const StyledContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 20rem 0;
-
-  @media screen and (max-width: 1024px) {
-    margin: 10rem 0;
-  }
 `;
 
 const StyledTitle = styled.h1`
@@ -28,16 +27,35 @@ const StyledTitle = styled.h1`
   font-weight: ${({ theme }) => theme.bold};
   color: ${({ theme }) => theme.colors.white};
   letter-spacing: 1rem;
-  max-width: 80%;
+  /* max-width: 80%; */
+
+  @media screen and (max-width: 812px) {
+    font-size: ${({ theme }) => theme.fontSize.xl};
+    letter-spacing: 0.5rem;
+  }
+
+  @media screen and (max-width: 812px) and (orientation: landscape) {
+    font-size: ${({ theme }) => theme.fontSize.l};
+  }
 `;
 
 const StyledDescription = styled.p`
   margin: 4rem auto;
+  padding: 0 1rem;
   max-width: 540px;
   color: ${({ theme }) => theme.colors.white};
   font-weight: ${({ theme }) => theme.regular};
   font-size: ${({ theme }) => theme.fontSize.l};
   line-height: 1.5;
+
+  @media screen and (max-width: 812px) {
+    font-size: ${({ theme }) => theme.fontSize.m};
+  }
+
+  @media screen and (max-width: 812px) and (orientation: landscape) {
+    margin: 2rem auto;
+    font-size: ${({ theme }) => theme.fontSize.s};
+  }
 `;
 
 const Hero = () => {

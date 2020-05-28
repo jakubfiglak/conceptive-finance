@@ -15,6 +15,11 @@ const StyledButton = styled.button`
   cursor: pointer;
   transition: all 0.3s;
 
+  @media screen and (max-width: 812px) {
+    font-size: ${({ theme }) => theme.fontSize.xs};
+    padding: 0.8rem 1.8rem;
+  }
+
   &:hover {
     background-color: ${({ theme }) => theme.colors.white};
     color: ${({ theme }) => theme.colors.primary};
