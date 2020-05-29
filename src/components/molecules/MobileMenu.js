@@ -2,8 +2,8 @@ import React from 'react';
 import { bool } from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import Button from './Button';
-import NavLink from './NavLink';
+import Button from '../atoms/Button';
+import NavLink from '../atoms/NavLink';
 
 const StyledMenu = styled.div`
   position: fixed;

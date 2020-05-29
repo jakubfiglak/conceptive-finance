@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import logo from '../images/logo_white.png';
+import logo from '../../assets/logo/logo_white.png';
 import NavList from './NavList';
-import Button from './Button';
-import Burger from './Burger';
+import Button from '../atoms/Button';
+import Burger from '../atoms/Burger';
 import MobileMenu from './MobileMenu';
 
 const StyledNav = styled.nav`

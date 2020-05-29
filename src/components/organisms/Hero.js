@@ -2,8 +2,8 @@ import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import styled from 'styled-components';
 import BackgroundImage from 'gatsby-background-image';
-import Navbar from '../components/Navbar';
-import Button from '../components/Button';
+import Navbar from '../molecules/Navbar';
+import Button from '../atoms/Button';
 
 const StyledBackgroundImage = styled(BackgroundImage)`
   position: relative;
@@ -27,7 +27,6 @@ const StyledTitle = styled.h1`
   font-weight: ${({ theme }) => theme.bold};
   color: ${({ theme }) => theme.colors.white};
   letter-spacing: 1rem;
-  /* max-width: 80%; */
 
   @media screen and (max-width: 812px) {
     font-size: ${({ theme }) => theme.fontSize.xl};

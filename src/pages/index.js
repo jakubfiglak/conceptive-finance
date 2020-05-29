@@ -3,8 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../theme/GlobalStyle';
 import theme from '../theme/theme';
 import SEO from '../components/seo';
-import Heading from '../components/Heading';
-import Hero from '../sections/Hero';
+import Hero from '../components/organisms/Hero';
 
 const IndexPage = () => (
   <>
@@ -12,7 +11,6 @@ const IndexPage = () => (
       <GlobalStyle />
       <SEO title="Home" />
       <Hero />
-      <Heading>Hello from Gatsby</Heading>
       <h5>Hello</h5>
       <section id="section">hello</section>
     </ThemeProvider>
