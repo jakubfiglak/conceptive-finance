@@ -28,12 +28,12 @@ const StyledTitle = styled.h1`
   color: ${({ theme }) => theme.colors.white};
   letter-spacing: 1rem;
 
-  @media screen and (max-width: 812px) {
+  @media screen and (max-width: 823px) {
     font-size: ${({ theme }) => theme.fontSize.xl};
     letter-spacing: 0.5rem;
   }
 
-  @media screen and (max-width: 812px) and (orientation: landscape) {
+  @media screen and (max-width: 823px) and (orientation: landscape) {
     font-size: ${({ theme }) => theme.fontSize.l};
   }
 `;
@@ -47,11 +47,11 @@ const StyledDescription = styled.p`
   font-size: ${({ theme }) => theme.fontSize.l};
   line-height: 1.5;
 
-  @media screen and (max-width: 812px) {
+  @media screen and (max-width: 823px) {
     font-size: ${({ theme }) => theme.fontSize.m};
   }
 
-  @media screen and (max-width: 812px) and (orientation: landscape) {
+  @media screen and (max-width: 823px) and (orientation: landscape) {
     margin: 2rem auto;
     font-size: ${({ theme }) => theme.fontSize.s};
   }
