@@ -1,9 +1,10 @@
 import React from 'react';
-import { graphql, useStaticQuery, Link } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 import BackgroundImage from 'gatsby-background-image';
 import Navbar from '../molecules/Navbar';
 import Button from '../atoms/Button';
+import { companyName, welcomeText } from '../../data';
 
 const StyledBackgroundImage = styled(BackgroundImage)`
   position: relative;
@@ -78,12 +79,9 @@ const Hero = () => {
     <StyledBackgroundImage Tag="section" fluid={imageData} role="img">
       <Navbar />
       <StyledContainer>
-        <StyledTitle>Conceptive Finance</StyledTitle>
-        <StyledDescription>
-          Usługi księgowe, usługi kadrowo-płacowe, księgi handlowe, ryczałt, deklaracje, doradztwo,
-          umowy{' '}
-        </StyledDescription>
-        <Button tertiary as={Link} to="#about">
+        <StyledTitle>{companyName}</StyledTitle>
+        <StyledDescription>{welcomeText}</StyledDescription>
+        <Button tertiary as="a" to="#about">
           Dowiedz się więcej
         </Button>
       </StyledContainer>

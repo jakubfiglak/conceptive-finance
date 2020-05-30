@@ -1,6 +1,33 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
+import SectionHeading from '../atoms/SectionHeading';
+import OfferCard from '../molecules/OfferCard';
+import { offerContent } from '../../data';
+
+const StyledSection = styled.section`
+  padding: 10rem 0;
+  background: ${({ theme }) => theme.colors.lightGray};
+`;
+
+const StyledHeading = styled(SectionHeading)`
+  text-align: center;
+`;
+
+const StyledWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10rem;
+  justify-items: center;
+  justify-content: center;
+  padding: 10rem 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 812px) {
+    grid-template-columns: 1fr;
+  }
+`;
 
 const Offer = () => {
   const { allFile } = useStaticQuery(
@@ -21,9 +48,32 @@ const Offer = () => {
     `
   );
 
-  console.log(allFile.edges); // this is the array of nodes
+  const offerContentWithImages = offerContent.map((offer, idx) => ({
+    ...offer,
+    fluid: allFile.edges[idx].node.childImageSharp.fluid,
+  }));
 
-  return <h1>Offer</h1>;
+  console.log(offerContentWithImages);
+
+  return (
+    <StyledSection id="offer">
+      <StyledHeading>Oferta</StyledHeading>
+      <StyledWrapper>
+        {offerContentWithImages.map((offer) => {
+          const { icon, title, features, fluid } = offer;
+          return (
+            <OfferCard
+              Icon={icon}
+              title={title}
+              features={features}
+              imageData={fluid}
+              key={title}
+            />
+          );
+        })}
+      </StyledWrapper>
+    </StyledSection>
+  );
 };
 
 export default Offer;

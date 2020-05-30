@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Pattern from '../../assets/patterns/Pattern_red.svg';
+import Pattern from '../../assets/patterns/Pattern_red.inline.svg';
 
 export const PatternRed = styled(Pattern)`
   position: absolute;

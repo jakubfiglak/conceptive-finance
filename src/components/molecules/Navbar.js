@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 import logo from '../../assets/logo/logo_white.png';
 import NavList from './NavList';
 import Button from '../atoms/Button';
@@ -45,7 +44,7 @@ const Navbar = () => {
     <StyledNav>
       <StyledLogo src={logo} alt="Conceptive Finance Logo" />
       <NavList />
-      <StyledContactButton as={Link} to="#contact">
+      <StyledContactButton as="a" to="#contact">
         Kontakt
       </StyledContactButton>
       <Burger open={isMobileMenuVisible} setOpen={setMobileMenuVisibility} />

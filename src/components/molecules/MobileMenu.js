@@ -1,7 +1,6 @@
 import React from 'react';
 import { bool } from 'prop-types';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 import Button from '../atoms/Button';
 import NavLink from '../atoms/NavLink';
 
@@ -45,7 +44,7 @@ const MobileMenu = ({ open }) => (
         <NavLink to="#pricing">Cennik</NavLink>
       </li>
     </StyledList>
-    <StyledButton as={Link} to="#contact">
+    <StyledButton as="a" to="#contact">
       Kontakt
     </StyledButton>
   </StyledMenu>

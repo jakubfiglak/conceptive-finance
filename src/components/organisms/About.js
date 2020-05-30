@@ -4,6 +4,10 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
 import SectionHeading from '../atoms/SectionHeading';
 import { PatternRed, PatternYellow } from '../atoms/Pattern';
+import { aboutText } from '../../data';
+
+// TODO: download higher resolution section image
+// make patterns symmetrical
 
 const StyledSection = styled.section`
   position: relative;
@@ -79,16 +83,7 @@ const About = () => {
       <PatternRed />
       <StyledWrapper>
         <StyledHeading>O nas</StyledHeading>
-        <StyledParagraph>
-          Jesteśmy grupą wykwalifikowanych księgowych, którzy zadbają o spokój w finansach Twojej
-          firmy. Kładziemy nacisk na profesjonalizm oraz jakość świadczonych przez nas usług.
-          Zapewniamy pełną obsługę finansowo - księgową, a także kadrowa i płacową podmiotów
-          gospodarczych niezależnie od formy prawnej. Naszym klientom oferujemy doradztwo w
-          kwestiach podatkowych oraz biznesowych i reprezentację w urzędach. Pomagamy w założeniu
-          firmy. Każdy klient otrzymuje wsparcie księgowego i możliwośc indywidualnych konsultacji.
-          Przejmujemy na siebie pełnię kwestii księgowo - podatkowych tak, aby klient mógł w pełni
-          skupić się na prowadzeniu biznesu.
-        </StyledParagraph>
+        <StyledParagraph>{aboutText}</StyledParagraph>
         <StyledImg fluid={imageData} alt="" />
       </StyledWrapper>
       <PatternYellow />
