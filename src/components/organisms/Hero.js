@@ -81,7 +81,7 @@ const Hero = () => {
       <StyledContainer>
         <StyledTitle>{companyName}</StyledTitle>
         <StyledDescription>{welcomeText}</StyledDescription>
-        <Button tertiary as="a" to="#about">
+        <Button tertiary as="a" href="#about">
           Dowiedz się więcej
         </Button>
       </StyledContainer>

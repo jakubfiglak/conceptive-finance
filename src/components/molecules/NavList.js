@@ -14,13 +14,13 @@ const StyledList = styled.ul`
 const NavList = () => (
   <StyledList>
     <li>
-      <NavLink to="#about">O nas</NavLink>
+      <NavLink href="#about">O nas</NavLink>
     </li>
     <li>
-      <NavLink to="#offer">Oferta</NavLink>
+      <NavLink href="#offer">Oferta</NavLink>
     </li>
     <li>
-      <NavLink to="#pricing">Cennik</NavLink>
+      <NavLink href="#pricing">Cennik</NavLink>
     </li>
   </StyledList>
 );

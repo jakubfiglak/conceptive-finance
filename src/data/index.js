@@ -2,6 +2,8 @@ import AssignmentIcon from '../assets/icons/assignment.inline.svg';
 import PeopleIcon from '../assets/icons/group.inline.svg';
 import SchoolIcon from '../assets/icons/school.inline.svg';
 import ThumbIcon from '../assets/icons/thumb_up.inline.svg';
+import PasteIcon from '../assets/icons/paste.inline.svg';
+import WorkIcon from '../assets/icons/work.inline.svg';
 
 export const companyName = 'conceptive finance';
 export const welcomeText =
@@ -30,5 +32,22 @@ export const offerContent = [
     icon: ThumbIcon,
     title: 'Pozsotałe usługi',
     features: ['analizy', 'raporty', 'budżety'],
+  },
+];
+
+export const pricingContent = [
+  {
+    icon: PasteIcon,
+    title: 'KPiR/Ryczałt',
+    features: ['spułki krzaki', 'wałki', 'żule słupy'],
+    price: 'już od 200 pln netto miesięcznie',
+    secondary: false,
+  },
+  {
+    icon: WorkIcon,
+    title: 'KH',
+    features: ['spułki krzaki', 'wałki', 'żule słupy'],
+    price: 'już od 600 pln netto miesięcznie',
+    secondary: true,
   },
 ];

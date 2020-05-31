@@ -44,7 +44,7 @@ const Navbar = () => {
     <StyledNav>
       <StyledLogo src={logo} alt="Conceptive Finance Logo" />
       <NavList />
-      <StyledContactButton as="a" to="#contact">
+      <StyledContactButton as="a" href="#contact">
         Kontakt
       </StyledContactButton>
       <Burger open={isMobileMenuVisible} setOpen={setMobileMenuVisibility} />

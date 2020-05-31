@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from 'gatsby-image';
 import { func, string, arrayOf, shape, number } from 'prop-types';
-import CheckRed from '../../assets/icons/check_red.svg';
+import FeaturesListElement from '../atoms/FeaturesListElement';
 
 const StyledWrapper = styled.div`
   width: 100%;
@@ -44,19 +44,19 @@ const StyledList = styled.li`
   list-style: none;
 `;
 
-const StyledListElement = styled.ul`
-  display: flex;
-  align-items: center;
-  font-size: ${({ theme }) => theme.fontSize.s};
-  padding: 0.5rem 0;
-  text-align: center;
+// const StyledListElement = styled.ul`
+//   display: flex;
+//   align-items: center;
+//   font-size: ${({ theme }) => theme.fontSize.s};
+//   padding: 0.5rem 0;
+//   text-align: center;
 
-  &::before {
-    display: block;
-    content: url(${CheckRed});
-    margin-right: 0.5rem;
-  }
-`;
+//   &::before {
+//     display: block;
+//     content: url(${CheckRed});
+//     margin-right: 0.5rem;
+//   }
+// `;
 
 const OfferCard = ({ Icon, title, features, imageData }) => {
   return (
@@ -67,7 +67,7 @@ const OfferCard = ({ Icon, title, features, imageData }) => {
         <StyledHeading>{title}</StyledHeading>
         <StyledList>
           {features.map((feature) => (
-            <StyledListElement key={feature}>{feature}</StyledListElement>
+            <FeaturesListElement key={feature}>{feature}</FeaturesListElement>
           ))}
         </StyledList>
       </StyledContentWrapper>

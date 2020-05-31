@@ -30,6 +30,10 @@ const StyledButton = styled.button`
     css`
       border: 0;
       background-color: ${({ theme }) => theme.colors.primary};
+
+      &:hover {
+        background-color: transparent;
+      }
     `}
 
   ${({ secondary }) =>
@@ -37,6 +41,11 @@ const StyledButton = styled.button`
     css`
       border: 0;
       background-color: ${({ theme }) => theme.colors.secondary};
+
+      &:hover {
+        background-color: transparent;
+        color: ${({ theme }) => theme.colors.secondary};
+      }
     `}
 
   ${({ tertiary }) =>
