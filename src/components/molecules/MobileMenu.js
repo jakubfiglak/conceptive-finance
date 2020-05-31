@@ -1,5 +1,5 @@
 import React from 'react';
-import { bool } from 'prop-types';
+import { bool, func } from 'prop-types';
 import styled from 'styled-components';
 import Button from '../atoms/Button';
 import NavLink from '../atoms/NavLink';
@@ -31,20 +31,26 @@ const StyledButton = styled(Button)`
   margin-top: 3rem;
 `;
 
-const MobileMenu = ({ open }) => (
+const MobileMenu = ({ open, setOpen }) => (
   <StyledMenu open={open}>
     <StyledList>
       <li>
-        <NavLink to="#about">O nas</NavLink>
+        <NavLink href="#about" onClick={() => setOpen(!open)}>
+          O nas
+        </NavLink>
       </li>
       <li>
-        <NavLink to="#offer">Oferta</NavLink>
+        <NavLink href="#offer" onClick={() => setOpen(!open)}>
+          Oferta
+        </NavLink>
       </li>
       <li>
-        <NavLink to="#pricing">Cennik</NavLink>
+        <NavLink href="#pricing" onClick={() => setOpen(!open)}>
+          Cennik
+        </NavLink>
       </li>
     </StyledList>
-    <StyledButton as="a" to="#contact">
+    <StyledButton as="a" to="#contact" onClick={() => setOpen(!open)}>
       Kontakt
     </StyledButton>
   </StyledMenu>
@@ -52,6 +58,7 @@ const MobileMenu = ({ open }) => (
 
 MobileMenu.propTypes = {
   open: bool.isRequired,
+  setOpen: func.isRequired,
 };
 
 export default MobileMenu;

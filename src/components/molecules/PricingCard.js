@@ -30,6 +30,7 @@ const StyledHeader = styled.header`
 const StyledHeading = styled.h3`
   font-size: ${({ theme }) => theme.fontSize.l};
   color: ${({ theme }) => theme.colors.white};
+  margin-left: 1rem;
 `;
 
 const StyledList = styled.li`
