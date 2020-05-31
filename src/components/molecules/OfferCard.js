@@ -1,18 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
-import { func, string, arrayOf } from 'prop-types';
-import BackgroundImage from 'gatsby-background-image';
+import Image from 'gatsby-image';
+import { func, string, arrayOf, shape, number } from 'prop-types';
 import CheckRed from '../../assets/icons/check_red.svg';
 
-// TODO: fix border radius issue
-
-const StyledBackground = styled(BackgroundImage)`
+const StyledWrapper = styled.div`
   width: 100%;
   max-width: 400px;
   height: 350px;
   border-radius: 8px;
   position: relative;
   margin-bottom: 15rem;
+`;
+
+const StyledImage = styled(Image)`
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 `;
 
 const StyledContentWrapper = styled.div`
@@ -56,7 +60,8 @@ const StyledListElement = styled.ul`
 
 const OfferCard = ({ Icon, title, features, imageData }) => {
   return (
-    <StyledBackground Tag="div" role="img" fluid={imageData}>
+    <StyledWrapper>
+      <StyledImage fluid={imageData} alt={title} />
       <StyledContentWrapper>
         <Icon />
         <StyledHeading>{title}</StyledHeading>
@@ -66,7 +71,7 @@ const OfferCard = ({ Icon, title, features, imageData }) => {
           ))}
         </StyledList>
       </StyledContentWrapper>
-    </StyledBackground>
+    </StyledWrapper>
   );
 };
 
@@ -74,6 +79,13 @@ OfferCard.propTypes = {
   Icon: func.isRequired,
   title: string.isRequired,
   features: arrayOf(string).isRequired,
+  imageData: shape({
+    aspectRatio: number.isRequired,
+    sizes: string.isRequired,
+    src: string.isRequired,
+    srcSet: string.isRequired,
+    tracedSVG: string.isRequired,
+  }).isRequired,
 };
 
 export default OfferCard;

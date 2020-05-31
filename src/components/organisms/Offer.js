@@ -53,8 +53,6 @@ const Offer = () => {
     fluid: allFile.edges[idx].node.childImageSharp.fluid,
   }));
 
-  console.log(offerContentWithImages);
-
   return (
     <StyledSection id="offer">
       <StyledHeading>Oferta</StyledHeading>
