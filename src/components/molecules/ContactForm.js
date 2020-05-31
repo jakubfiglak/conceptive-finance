@@ -8,7 +8,7 @@ const StyledForm = styled.form`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2.4rem 3rem;
 
-  @media screen and (max-width: 412px) {
+  @media screen and (max-width: 414px) {
     grid-template-columns: 1fr;
     width: 90%;
   }
@@ -55,7 +55,7 @@ const ContactForm = () => {
         label="Nr telefonu"
         type="tel"
         name="phone"
-        placeholder="+48-123-456-789"
+        placeholder="+48 123-456-789"
         onChange={onChange}
         value={phone}
       />

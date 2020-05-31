@@ -2,13 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import SectionHeading from '../atoms/SectionHeading';
 import ContactForm from '../molecules/ContactForm';
+import ContactInfo from '../molecules/ContactInfo';
 
 const StyledSection = styled.section`
-  display: flex;
-  justify-content: center;
-  padding: 10rem 0;
-  /* max-width: 1000px; */
   background: ${({ theme }) => theme.colors.lightGray};
+`;
+
+const StyledFormWrapper = styled.div`
+  display: flex;
+  padding: 10rem 0;
+  justify-content: center;
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
@@ -33,14 +36,17 @@ const StyledParagraph = styled.p`
 
 const Contact = () => (
   <StyledSection>
-    <StyledWrapper>
-      <SectionHeading>Skontaktuj się z nami!</SectionHeading>
-      <StyledParagraph>
-        Masz pytanie? Chcesz nawiązać współpracę? Skorzystaj z formularza kontaktowego, odpowiemy
-        najszybciej, jak to możliwe!
-      </StyledParagraph>
-    </StyledWrapper>
-    <ContactForm />
+    <StyledFormWrapper>
+      <StyledWrapper>
+        <SectionHeading>Skontaktuj się z nami!</SectionHeading>
+        <StyledParagraph>
+          Masz pytanie? Chcesz nawiązać współpracę? Skorzystaj z formularza kontaktowego, odpowiemy
+          najszybciej, jak to możliwe!
+        </StyledParagraph>
+      </StyledWrapper>
+      <ContactForm />
+    </StyledFormWrapper>
+    <ContactInfo />
   </StyledSection>
 );
 
