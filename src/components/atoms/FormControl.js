@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string, oneOf } from 'prop-types';
+import { string, oneOf, bool, func } from 'prop-types';
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -28,16 +28,30 @@ const StyledWrapper = styled.div`
   &:nth-child(5) {
     grid-column: 1 / span 2;
   }
+
+  @media screen and (max-width: 412px) {
+    &:nth-child(5) {
+      grid-column: 1;
+    }
+  }
 `;
 
 const StyledLabel = styled.label`
   font-size: ${({ theme }) => theme.fontSize.xxs};
 `;
 
-const FormControl = ({ Tag, label, type, name, placeholder }) => (
+const FormControl = ({ Tag, label, type, name, placeholder, required, onChange, value }) => (
   <StyledWrapper>
     <StyledLabel htmlFor={name}>{label}</StyledLabel>
-    <Tag type={type} name={name} id={name} placeholder={placeholder} />
+    <Tag
+      type={type}
+      name={name}
+      id={name}
+      placeholder={placeholder}
+      required={required}
+      onChange={onChange}
+      value={value}
+    />
   </StyledWrapper>
 );
 
@@ -47,10 +61,14 @@ FormControl.propTypes = {
   type: string,
   name: string.isRequired,
   placeholder: string.isRequired,
+  required: bool,
+  onChange: func.isRequired,
+  value: string.isRequired,
 };
 
 FormControl.defaultProps = {
   type: null,
+  required: false,
 };
 
 export default FormControl;
