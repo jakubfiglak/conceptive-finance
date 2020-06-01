@@ -35,9 +35,9 @@ const StyledParagraph = styled.p`
 `;
 
 const Contact = () => (
-  <StyledSection>
+  <StyledSection id="contact">
     <StyledFormWrapper>
-      <StyledWrapper>
+      <StyledWrapper data-sal="slide-right" data-sal-duration="500">
         <SectionHeading>Skontaktuj się z nami!</SectionHeading>
         <StyledParagraph>
           Masz pytanie? Chcesz nawiązać współpracę? Skorzystaj z formularza kontaktowego, odpowiemy

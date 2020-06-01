@@ -50,7 +50,7 @@ const MobileMenu = ({ open, setOpen }) => (
         </NavLink>
       </li>
     </StyledList>
-    <StyledButton as="a" to="#contact" onClick={() => setOpen(!open)}>
+    <StyledButton as="a" href="#contact" onClick={() => setOpen(!open)}>
       Kontakt
     </StyledButton>
   </StyledMenu>

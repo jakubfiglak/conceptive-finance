@@ -51,7 +51,7 @@ const StyledInfoContainer = styled.div`
 const ContactInfo = () => (
   <StyledFooter>
     <StyledWrapper>
-      <StyledInfoContainer>
+      <StyledInfoContainer data-sal="slide-up" data-sal-duration="500">
         <LocationIcon />
         <address>
           {' '}
@@ -63,11 +63,11 @@ const ContactInfo = () => (
           <br />
         </address>
       </StyledInfoContainer>
-      <StyledInfoContainer>
+      <StyledInfoContainer data-sal="slide-up" data-sal-duration="500" data-sal-delay="100">
         <PhoneIcon />
         <address>+48 697-220-330</address>
       </StyledInfoContainer>
-      <StyledInfoContainer>
+      <StyledInfoContainer data-sal="slide-up" data-sal-duration="500" data-sal-delay="200">
         <MailIcon />
         <address>damian@conceptivefinance.pl</address>
       </StyledInfoContainer>

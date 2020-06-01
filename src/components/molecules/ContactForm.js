@@ -39,7 +39,12 @@ const ContactForm = () => {
   const { name, phone, email, company, text } = formData;
 
   return (
-    <StyledForm autoComplete="off" onSubmit={onSubmit}>
+    <StyledForm
+      autoComplete="off"
+      onSubmit={onSubmit}
+      data-sal="slide-left"
+      data-sal-duration="500"
+    >
       <FormControl
         Tag="input"
         label="Imię i nazwisko"

@@ -40,27 +40,13 @@ const StyledHeading = styled.h3`
   padding: 2rem 0;
 `;
 
-const StyledList = styled.li`
+const StyledList = styled.ul`
   list-style: none;
 `;
 
-// const StyledListElement = styled.ul`
-//   display: flex;
-//   align-items: center;
-//   font-size: ${({ theme }) => theme.fontSize.s};
-//   padding: 0.5rem 0;
-//   text-align: center;
-
-//   &::before {
-//     display: block;
-//     content: url(${CheckRed});
-//     margin-right: 0.5rem;
-//   }
-// `;
-
 const OfferCard = ({ Icon, title, features, imageData }) => {
   return (
-    <StyledWrapper>
+    <StyledWrapper data-sal="flip-right" data-sal-duration="500">
       <StyledImage fluid={imageData} alt={title} />
       <StyledContentWrapper>
         <Icon />

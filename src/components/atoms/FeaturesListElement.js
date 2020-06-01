@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import CheckRed from '../../assets/icons/check_red.svg';
 import CheckYellow from '../../assets/icons/check_yellow.svg';
 
-const StyledListElement = styled.ul`
+const StyledListElement = styled.li`
   display: flex;
   align-items: center;
   font-size: ${({ theme }) => theme.fontSize.s};

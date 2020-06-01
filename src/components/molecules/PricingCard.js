@@ -34,7 +34,7 @@ const StyledHeading = styled.h3`
   margin-left: 1rem;
 `;
 
-const StyledList = styled.li`
+const StyledList = styled.ul`
   list-style: none;
   margin-top: 4rem;
 `;
@@ -49,7 +49,7 @@ const StyledPrice = styled.p`
 `;
 
 const PricingCard = ({ Icon, title, features, price, secondary, file }) => (
-  <StyledWrapper>
+  <StyledWrapper data-sal="flip-right" data-sal-duration="500">
     <StyledHeader secondary={secondary}>
       <Icon />
       <StyledHeading>{title}</StyledHeading>

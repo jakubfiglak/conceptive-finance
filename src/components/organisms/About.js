@@ -81,7 +81,7 @@ const About = () => {
   return (
     <StyledSection id="about">
       <PatternRed />
-      <StyledWrapper>
+      <StyledWrapper data-sal="slide-right" data-sal-duration="500">
         <StyledHeading>O nas</StyledHeading>
         <StyledParagraph>{aboutText}</StyledParagraph>
         <StyledImg fluid={imageData} alt="" />

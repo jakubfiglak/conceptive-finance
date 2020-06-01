@@ -76,12 +76,16 @@ const Hero = () => {
   const imageData = desktop.childImageSharp.fluid;
 
   return (
-    <StyledBackgroundImage Tag="section" fluid={imageData} role="img">
+    <StyledBackgroundImage Tag="section" fluid={imageData}>
       <Navbar />
       <StyledContainer>
-        <StyledTitle>{companyName}</StyledTitle>
-        <StyledDescription>{welcomeText}</StyledDescription>
-        <Button tertiary as="a" href="#about">
+        <StyledTitle data-sal="slide-right" data-sal-duration="500">
+          {companyName}
+        </StyledTitle>
+        <StyledDescription data-sal="slide-left" data-sal-duration="500">
+          {welcomeText}
+        </StyledDescription>
+        <Button tertiary as="a" href="#about" data-sal="flip-up" data-sal-duration="500">
           Dowiedz się więcej
         </Button>
       </StyledContainer>
