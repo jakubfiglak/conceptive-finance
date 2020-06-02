@@ -14,6 +14,12 @@ const StyledForm = styled.form`
   }
 `;
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&');
+};
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -31,9 +37,20 @@ const ContactForm = () => {
     }));
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'contact', formData }),
+      });
+
+      alert('Success!');
+    } catch (err) {
+      alert(err);
+    }
   };
 
   const { name, phone, email, company, text } = formData;
@@ -44,6 +61,10 @@ const ContactForm = () => {
       onSubmit={onSubmit}
       data-sal="slide-left"
       data-sal-duration="500"
+      name="contact"
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
     >
       <FormControl
         Tag="input"
