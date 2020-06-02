@@ -4,8 +4,10 @@ import styled from 'styled-components';
 import SectionHeading from '../atoms/SectionHeading';
 import PricingCard from '../molecules/PricingCard';
 import { pricingContent } from '../../data';
+import { PatternYellow } from '../atoms/Pattern';
 
 const StyledSection = styled.section`
+  position: relative;
   padding: 10rem 0;
 `;
 
@@ -18,7 +20,8 @@ const StyledWrapper = styled.div`
   grid-template-columns: repeat(2, 1fr);
   max-width: ${({ theme }) => theme.contentWidth};
   justify-items: center;
-  margin: 10rem auto;
+  padding: 10rem 3rem;
+  margin: 0 auto;
 
   @media screen and (max-width: 736px) {
     grid-template-columns: 1fr;
@@ -64,6 +67,7 @@ const Pricing = () => {
           );
         })}
       </StyledWrapper>
+      <PatternYellow />
     </StyledSection>
   );
 };

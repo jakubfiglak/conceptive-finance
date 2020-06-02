@@ -8,9 +8,9 @@ const StyledForm = styled.form`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2.4rem 3rem;
 
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 667px) {
     grid-template-columns: 1fr;
-    width: 90%;
+    width: 100%;
   }
 `;
 

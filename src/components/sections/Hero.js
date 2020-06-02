@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 import BackgroundImage from 'gatsby-background-image';
-import Navbar from '../molecules/Navbar';
+import Navbar from '../organisms/Navbar';
 import Button from '../atoms/Button';
 import { companyName, welcomeText } from '../../data';
 

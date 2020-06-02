@@ -29,7 +29,7 @@ const StyledWrapper = styled.div`
     grid-column: 1 / span 2;
   }
 
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 667px) {
     &:nth-child(5) {
       grid-column: 1;
     }

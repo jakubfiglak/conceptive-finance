@@ -15,12 +15,14 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-size: 62.5%;
     scroll-behavior: smooth; 
+    overflow-x: hidden;
   }
   
   body {
     font-size: 1.8rem;
     font-family: ${({ theme }) => theme.fontFamily};
     color: ${({ theme }) => theme.colors.grayishBlue};
+    overflow-x: hidden;
   }
 `;
 

@@ -10,7 +10,7 @@ const StyledSection = styled.section`
 
 const StyledFormWrapper = styled.div`
   display: flex;
-  padding: 10rem 0;
+  padding: 10rem 3rem;
   justify-content: center;
   max-width: ${({ theme }) => theme.contentWidth};
   margin: 0 auto;
@@ -22,8 +22,6 @@ const StyledFormWrapper = styled.div`
 `;
 
 const StyledWrapper = styled.div`
-  max-width: 445px;
-
   @media screen and (max-width: 1024px) {
     text-align: center;
     margin-bottom: 3rem;

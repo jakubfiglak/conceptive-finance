@@ -1,0 +1,75 @@
+<svg width="230" height="230" viewBox="0 0 230 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<g clip-path="url(#clip1)">
+<circle cx="8.93401" cy="115" r="6" transform="rotate(-45 8.93401 115)" fill="#FFBD4A"/>
+<circle cx="30.1471" cy="93.7868" r="6" transform="rotate(-45 30.1471 93.7868)" fill="#FFBD4A"/>
+<circle cx="51.3605" cy="72.5736" r="6" transform="rotate(-45 51.3605 72.5736)" fill="#FFBD4A"/>
+<circle cx="72.5737" cy="51.3604" r="6" transform="rotate(-45 72.5737 51.3604)" fill="#FFBD4A"/>
+<circle cx="93.7868" cy="30.1472" r="6" transform="rotate(-45 93.7868 30.1472)" fill="#FFBD4A"/>
+<circle cx="115" cy="8.93399" r="6" transform="rotate(-45 115 8.93399)" fill="#FFBD4A"/>
+</g>
+<g clip-path="url(#clip2)">
+<circle cx="30.1471" cy="136.213" r="6" transform="rotate(-45 30.1471 136.213)" fill="#FFBD4A"/>
+<circle cx="51.3603" cy="115" r="6" transform="rotate(-45 51.3603 115)" fill="#FFBD4A"/>
+<circle cx="72.5737" cy="93.7868" r="6" transform="rotate(-45 72.5737 93.7868)" fill="#FFBD4A"/>
+<circle cx="93.7868" cy="72.5736" r="6" transform="rotate(-45 93.7868 72.5736)" fill="#FFBD4A"/>
+<circle cx="115" cy="51.3604" r="6" transform="rotate(-45 115 51.3604)" fill="#FFBD4A"/>
+<circle cx="136.213" cy="30.1472" r="6" transform="rotate(-45 136.213 30.1472)" fill="#FFBD4A"/>
+</g>
+<g clip-path="url(#clip3)">
+<circle cx="51.3605" cy="157.426" r="6" transform="rotate(-45 51.3605 157.426)" fill="#FFBD4A"/>
+<circle cx="72.5737" cy="136.213" r="6" transform="rotate(-45 72.5737 136.213)" fill="#FFBD4A"/>
+<circle cx="93.787" cy="115" r="6" transform="rotate(-45 93.787 115)" fill="#FFBD4A"/>
+<circle cx="115" cy="93.7868" r="6" transform="rotate(-45 115 93.7868)" fill="#FFBD4A"/>
+<circle cx="136.213" cy="72.5736" r="6" transform="rotate(-45 136.213 72.5736)" fill="#FFBD4A"/>
+<circle cx="157.426" cy="51.3604" r="6" transform="rotate(-45 157.426 51.3604)" fill="#FFBD4A"/>
+</g>
+<g clip-path="url(#clip4)">
+<circle cx="72.5737" cy="178.64" r="6" transform="rotate(-45 72.5737 178.64)" fill="#FFBD4A"/>
+<circle cx="93.7868" cy="157.426" r="6" transform="rotate(-45 93.7868 157.426)" fill="#FFBD4A"/>
+<circle cx="115" cy="136.213" r="6" transform="rotate(-45 115 136.213)" fill="#FFBD4A"/>
+<circle cx="136.213" cy="115" r="6" transform="rotate(-45 136.213 115)" fill="#FFBD4A"/>
+<circle cx="157.426" cy="93.7868" r="6" transform="rotate(-45 157.426 93.7868)" fill="#FFBD4A"/>
+<circle cx="178.64" cy="72.5736" r="6" transform="rotate(-45 178.64 72.5736)" fill="#FFBD4A"/>
+</g>
+<g clip-path="url(#clip5)">
+<circle cx="93.7868" cy="199.853" r="6" transform="rotate(-45 93.7868 199.853)" fill="#FFBD4A"/>
+<circle cx="115" cy="178.64" r="6" transform="rotate(-45 115 178.64)" fill="#FFBD4A"/>
+<circle cx="136.213" cy="157.426" r="6" transform="rotate(-45 136.213 157.426)" fill="#FFBD4A"/>
+<circle cx="157.426" cy="136.213" r="6" transform="rotate(-45 157.426 136.213)" fill="#FFBD4A"/>
+<circle cx="178.64" cy="115" r="6" transform="rotate(-45 178.64 115)" fill="#FFBD4A"/>
+<circle cx="199.853" cy="93.7868" r="6" transform="rotate(-45 199.853 93.7868)" fill="#FFBD4A"/>
+</g>
+<g clip-path="url(#clip6)">
+<circle cx="115" cy="221.066" r="6" transform="rotate(-45 115 221.066)" fill="#FFBD4A"/>
+<circle cx="136.213" cy="199.853" r="6" transform="rotate(-45 136.213 199.853)" fill="#FFBD4A"/>
+<circle cx="157.426" cy="178.64" r="6" transform="rotate(-45 157.426 178.64)" fill="#FFBD4A"/>
+<circle cx="178.64" cy="157.426" r="6" transform="rotate(-45 178.64 157.426)" fill="#FFBD4A"/>
+<circle cx="199.853" cy="136.213" r="6" transform="rotate(-45 199.853 136.213)" fill="#FFBD4A"/>
+<circle cx="221.066" cy="115" r="6" transform="rotate(-45 221.066 115)" fill="#FFBD4A"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect x="0.44873" y="115" width="162" height="162" transform="rotate(-45 0.44873 115)" fill="white"/>
+</clipPath>
+<clipPath id="clip1">
+<rect x="0.44873" y="115" width="162" height="30" transform="rotate(-45 0.44873 115)" fill="white"/>
+</clipPath>
+<clipPath id="clip2">
+<rect x="21.6619" y="136.213" width="162" height="30" transform="rotate(-45 21.6619 136.213)" fill="white"/>
+</clipPath>
+<clipPath id="clip3">
+<rect x="42.8752" y="157.426" width="162" height="30" transform="rotate(-45 42.8752 157.426)" fill="white"/>
+</clipPath>
+<clipPath id="clip4">
+<rect x="64.0884" y="178.64" width="162" height="30" transform="rotate(-45 64.0884 178.64)" fill="white"/>
+</clipPath>
+<clipPath id="clip5">
+<rect x="85.3015" y="199.853" width="162" height="30" transform="rotate(-45 85.3015 199.853)" fill="white"/>
+</clipPath>
+<clipPath id="clip6">
+<rect x="106.515" y="221.066" width="162" height="30" transform="rotate(-45 106.515 221.066)" fill="white"/>
+</clipPath>
+</defs>
+</svg>

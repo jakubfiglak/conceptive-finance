@@ -4,8 +4,10 @@ import styled from 'styled-components';
 import SectionHeading from '../atoms/SectionHeading';
 import OfferCard from '../molecules/OfferCard';
 import { offerContent } from '../../data';
+import { PatternRed } from '../atoms/Pattern';
 
 const StyledSection = styled.section`
+  position: relative;
   padding: 10rem 0;
   background: ${({ theme }) => theme.colors.lightGray};
 `;
@@ -70,6 +72,7 @@ const Offer = () => {
           );
         })}
       </StyledWrapper>
+      <PatternRed bottom />
     </StyledSection>
   );
 };
