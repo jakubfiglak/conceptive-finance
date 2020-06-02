@@ -7,10 +7,6 @@ import Burger from '../atoms/Burger';
 import MobileMenu from './MobileMenu';
 
 const StyledNav = styled.nav`
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -8,9 +8,8 @@ import { companyName, welcomeText } from '../../data';
 
 const StyledBackgroundImage = styled(BackgroundImage)`
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: auto 1fr;
   width: 100%;
   min-height: 100vh;
 `;
@@ -20,6 +19,8 @@ const StyledContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  align-self: center;
+  padding-bottom: 2rem;
 `;
 
 const StyledTitle = styled.h1`
