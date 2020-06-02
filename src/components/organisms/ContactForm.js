@@ -44,7 +44,7 @@ const ContactForm = () => {
       await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({ 'form-name': 'contact', formData }),
+        body: encode({ 'form-name': 'contact', ...formData }),
       });
 
       alert('Success!');
