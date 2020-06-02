@@ -21,7 +21,7 @@ const StyledWrapper = styled.div`
   justify-items: center;
   justify-content: center;
   padding: 10rem 3rem;
-  max-width: 1000px;
+  max-width: ${({ theme }) => theme.contentWidth};
   margin: 0 auto;
 
   @media screen and (max-width: 812px) {

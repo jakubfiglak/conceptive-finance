@@ -27,7 +27,7 @@ const StyledWrapper = styled.div`
   grid-gap: 5rem 12.5rem;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  max-width: ${({ theme }) => theme.contentWidth};
   margin: 0 auto;
 
   @media screen and (max-width: 1024px) {
@@ -49,7 +49,6 @@ const StyledParagraph = styled.p`
   grid-area: text;
   line-height: 1.4;
   text-align: justify;
-  max-width: 445px;
 
   @media screen and (max-width: 1024px) {
     justify-self: center;

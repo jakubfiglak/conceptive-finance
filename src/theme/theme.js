@@ -23,6 +23,7 @@ const theme = {
     bold: '700',
   },
   fontFamily: "'Lato', sans-serif",
+  contentWidth: '1200px',
 };
 
 export default theme;

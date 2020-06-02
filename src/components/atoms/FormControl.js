@@ -38,6 +38,7 @@ const StyledWrapper = styled.div`
 
 const StyledLabel = styled.label`
   font-size: ${({ theme }) => theme.fontSize.xxs};
+  margin-bottom: 0.5rem;
 `;
 
 const FormControl = ({ Tag, label, type, name, placeholder, required, onChange, value }) => (

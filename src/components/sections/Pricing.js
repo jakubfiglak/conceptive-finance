@@ -16,7 +16,7 @@ const StyledHeading = styled(SectionHeading)`
 const StyledWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 1000px;
+  max-width: ${({ theme }) => theme.contentWidth};
   justify-items: center;
   margin: 10rem auto;
 

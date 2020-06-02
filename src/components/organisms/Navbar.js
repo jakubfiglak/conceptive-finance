@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import logo from '../../assets/logo/logo_white.png';
-import NavList from './NavList';
+import NavList from '../molecules/NavList';
 import Button from '../atoms/Button';
 import Burger from '../atoms/Burger';
 import MobileMenu from './MobileMenu';

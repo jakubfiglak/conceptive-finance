@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import SectionHeading from '../atoms/SectionHeading';
-import ContactForm from '../molecules/ContactForm';
-import ContactInfo from '../molecules/ContactInfo';
+import ContactForm from '../organisms/ContactForm';
+import ContactInfo from '../organisms/ContactInfo';
 
 const StyledSection = styled.section`
   background: ${({ theme }) => theme.colors.lightGray};
@@ -12,6 +12,8 @@ const StyledFormWrapper = styled.div`
   display: flex;
   padding: 10rem 0;
   justify-content: center;
+  max-width: ${({ theme }) => theme.contentWidth};
+  margin: 0 auto;
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;

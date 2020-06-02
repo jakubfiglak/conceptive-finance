@@ -17,7 +17,7 @@ const StyledFooter = styled.footer`
 `;
 
 const StyledWrapper = styled.div`
-  max-width: 1200px;
+  max-width: ${({ theme }) => theme.contentWidth};
   display: flex;
   justify-content: space-between;
   margin: 0 auto;

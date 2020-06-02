@@ -6,7 +6,6 @@ import FeaturesListElement from '../atoms/FeaturesListElement';
 
 const StyledWrapper = styled.div`
   width: 100%;
-  max-width: 400px;
   height: 350px;
   border-radius: 8px;
   position: relative;

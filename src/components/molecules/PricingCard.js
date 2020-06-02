@@ -12,7 +12,6 @@ const StyledWrapper = styled.div`
   text-align: center;
   background: ${({ theme }) => theme.colors.lightGray};
   border-radius: 8px;
-  max-width: 340px;
   padding-bottom: 2.4rem;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
 `;
@@ -63,7 +62,7 @@ const PricingCard = ({ Icon, title, features, price, secondary, file }) => (
     </StyledList>
     <StyledPrice>{price}</StyledPrice>
     <Button href={file} download as="a" secondary={secondary} primary={!secondary}>
-      pobierz pełny cennik
+      pobierz cennik
     </Button>
   </StyledWrapper>
 );
