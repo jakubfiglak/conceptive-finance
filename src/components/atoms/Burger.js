@@ -41,7 +41,7 @@ const StyledBurger = styled.button`
     }
   }
 
-  @media screen and (min-width: 813px) {
+  @media screen and (min-width: ${({ theme }) => theme.screenWidth.small}) {
     display: none;
   }
 `;

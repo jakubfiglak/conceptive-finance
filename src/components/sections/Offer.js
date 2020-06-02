@@ -26,7 +26,7 @@ const StyledWrapper = styled.div`
   max-width: ${({ theme }) => theme.contentWidth};
   margin: 0 auto;
 
-  @media screen and (max-width: 812px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.small}) {
     grid-template-columns: 1fr;
   }
 `;

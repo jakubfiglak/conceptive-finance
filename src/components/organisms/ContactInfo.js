@@ -10,7 +10,7 @@ const StyledFooter = styled.footer`
   font-size: ${({ theme }) => theme.fontSize.m};
   color: ${({ theme }) => theme.colors.white};
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.small}) {
     padding: 6rem 1rem;
     font-size: ${({ theme }) => theme.fontSize.s};
   }
@@ -22,7 +22,7 @@ const StyledWrapper = styled.div`
   justify-content: space-between;
   margin: 0 auto;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.medium}) {
     flex-direction: column;
     align-items: flex-start;
     width: 300px;
@@ -39,7 +39,7 @@ const StyledInfoContainer = styled.div`
     margin-left: 1rem;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.medium}) {
     margin-bottom: 3rem;
 
     &:last-child {

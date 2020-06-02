@@ -6,7 +6,7 @@ const StyledList = styled.ul`
   display: flex;
   list-style: none;
 
-  @media screen and (max-width: 812px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.small}) {
     display: none;
   }
 `;

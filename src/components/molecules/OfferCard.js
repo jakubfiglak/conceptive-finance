@@ -27,6 +27,7 @@ const StyledContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 75%;
   background: ${({ theme }) => theme.colors.white};
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);

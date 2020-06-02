@@ -15,7 +15,7 @@ const StyledButton = styled.button`
   cursor: pointer;
   transition: all 0.3s;
 
-  @media screen and (max-width: 823px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.small}) {
     font-size: ${({ theme }) => theme.fontSize.xs};
     padding: 0.8rem 1.8rem;
   }

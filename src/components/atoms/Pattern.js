@@ -19,8 +19,15 @@ export const PatternRed = styled(Pattern)`
     fill: ${({ theme }) => theme.colors.primary};
   }
 
-  @media screen and (max-width: 812px) {
-    /* transform: scale(0.75); */
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.medium}) {
+    transform: translate(calc(50% - 6px), -10%) scale(0.75);
+
+    ${({ bottom }) =>
+      bottom &&
+      css`
+        top: 100%;
+        transform: translate(calc(50% - 6px), -50%) scale(0.75);
+      `}
   }
 `;
 
@@ -30,4 +37,8 @@ export const PatternYellow = styled(Pattern)`
   bottom: 0;
   left: 0;
   transform: translate(calc(-50% + 8px), 50%);
+
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.medium}) {
+    transform: translate(calc(-50% + 6px), 50%) scale(0.75);
+  }
 `;

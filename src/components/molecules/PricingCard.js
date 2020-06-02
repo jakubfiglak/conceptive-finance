@@ -61,8 +61,15 @@ const PricingCard = ({ Icon, title, features, price, secondary, file }) => (
       ))}
     </StyledList>
     <StyledPrice>{price}</StyledPrice>
-    <Button href={file} download as="a" secondary={secondary} primary={!secondary}>
-      pobierz cennik
+    <Button
+      href={file}
+      as="a"
+      secondary={secondary}
+      primary={!secondary}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      zobacz cennik
     </Button>
   </StyledWrapper>
 );

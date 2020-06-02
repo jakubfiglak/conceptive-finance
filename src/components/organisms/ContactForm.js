@@ -8,7 +8,7 @@ const StyledForm = styled.form`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2.4rem 3rem;
 
-  @media screen and (max-width: 667px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.small}) {
     grid-template-columns: 1fr;
     width: 100%;
   }

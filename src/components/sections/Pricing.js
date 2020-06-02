@@ -23,7 +23,7 @@ const StyledWrapper = styled.div`
   padding: 10rem 3rem;
   margin: 0 auto;
 
-  @media screen and (max-width: 736px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.small}) {
     grid-template-columns: 1fr;
     grid-gap: 5rem;
   }

@@ -7,13 +7,12 @@ import { PatternRed, PatternYellow } from '../atoms/Pattern';
 import { aboutText } from '../../data';
 
 // TODO: download higher resolution section image
-// make patterns symmetrical
 
 const StyledSection = styled.section`
   position: relative;
   padding: 16rem 5rem;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.medium}) {
     padding: 10rem 5rem;
   }
 `;
@@ -39,7 +38,7 @@ const StyledWrapper = styled.div`
 const StyledHeading = styled(SectionHeading)`
   grid-area: title;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.medium}) {
     text-align: center;
   }
 `;
@@ -50,7 +49,7 @@ const StyledParagraph = styled.p`
   line-height: 1.4;
   text-align: justify;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.medium}) {
     justify-self: center;
   }
 `;

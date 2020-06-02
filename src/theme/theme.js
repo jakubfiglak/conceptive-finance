@@ -24,6 +24,10 @@ const theme = {
   },
   fontFamily: "'Lato', sans-serif",
   contentWidth: '1200px',
+  screenWidth: {
+    small: '812px',
+    medium: '1024px',
+  },
 };
 
 export default theme;

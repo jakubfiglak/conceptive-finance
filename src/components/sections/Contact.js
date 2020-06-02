@@ -15,14 +15,14 @@ const StyledFormWrapper = styled.div`
   max-width: ${({ theme }) => theme.contentWidth};
   margin: 0 auto;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.medium}) {
     flex-direction: column;
     align-items: center;
   }
 `;
 
 const StyledWrapper = styled.div`
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.medium}) {
     text-align: center;
     margin-bottom: 3rem;
   }

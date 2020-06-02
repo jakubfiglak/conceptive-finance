@@ -12,23 +12,23 @@ const StyledNav = styled.nav`
   justify-content: space-between;
   padding: 3rem 17rem;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.medium}) {
     padding: 3rem;
   }
 
-  @media screen and (max-width: 812px) and (orientation: landscape) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.small}) {
     padding: 1rem 3rem;
   }
 `;
 
 const StyledLogo = styled.img`
-  @media screen and (max-width: 812px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.small}) {
     width: 150px;
   }
 `;
 
 const StyledContactButton = styled(Button)`
-  @media screen and (max-width: 812px) {
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.small}) {
     display: none;
   }
 `;
