@@ -20,7 +20,7 @@ export const PatternRed = styled(Pattern)`
   }
 
   @media screen and (max-width: ${({ theme }) => theme.screenWidth.medium}) {
-    transform: translate(calc(50% - 6px), -10%) scale(0.75);
+    transform: translate(calc(50% - 6px), -12.5%) scale(0.75);
 
     ${({ bottom }) =>
       bottom &&

@@ -68,7 +68,7 @@ const Hero = () => {
   const imageData = desktop.childImageSharp.fluid;
 
   return (
-    <StyledBackgroundImage Tag="section" fluid={imageData}>
+    <StyledBackgroundImage Tag="section" fluid={imageData} id="hero">
       <Navbar />
       <StyledContainer>
         <StyledTitle data-sal="slide-right" data-sal-duration="500">

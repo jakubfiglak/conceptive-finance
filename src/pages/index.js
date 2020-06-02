@@ -8,6 +8,7 @@ import About from '../components/sections/About';
 import Offer from '../components/sections/Offer';
 import Pricing from '../components/sections/Pricing';
 import Contact from '../components/sections/Contact';
+import Footer from '../components/sections/Footer';
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
@@ -20,6 +21,7 @@ const IndexPage = () => (
       <Pricing />
       <Contact />
     </main>
+    <Footer />
   </ThemeProvider>
 );
 

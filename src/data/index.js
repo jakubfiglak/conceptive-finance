@@ -39,14 +39,14 @@ export const pricingContent = [
   {
     icon: PasteIcon,
     title: 'KPiR/Ryczałt',
-    features: ['spułki krzaki', 'wałki', 'żule słupy'],
+    features: ['feature1', 'feature2', 'feature3'],
     price: 'już od 200 pln netto miesięcznie',
     secondary: false,
   },
   {
     icon: WorkIcon,
     title: 'KH',
-    features: ['spułki krzaki', 'wałki', 'żule słupy'],
+    features: ['feature1', 'feature2', 'feature3'],
     price: 'już od 600 pln netto miesięcznie',
     secondary: true,
   },

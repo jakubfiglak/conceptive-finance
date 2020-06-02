@@ -6,8 +6,6 @@ import SectionHeading from '../atoms/SectionHeading';
 import { PatternRed, PatternYellow } from '../atoms/Pattern';
 import { aboutText } from '../../data';
 
-// TODO: download higher resolution section image
-
 const StyledSection = styled.section`
   position: relative;
   padding: 16rem 5rem;
