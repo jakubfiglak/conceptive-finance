@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Button from '../atoms/Button';
 import NavLink from '../atoms/NavLink';
 
-const StyledMenu = styled.div`
+const StyledMenu = styled.nav`
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -32,25 +32,30 @@ const StyledButton = styled(Button)`
 `;
 
 const MobileMenu = ({ open, setOpen }) => (
-  <StyledMenu open={open}>
+  <StyledMenu open={open} aria-hidden={!open}>
     <StyledList>
       <li>
-        <NavLink href="#about" onClick={() => setOpen(!open)}>
+        <NavLink href="#about" onClick={() => setOpen(!open)} tabIndex={open ? '0' : '-1'}>
           O nas
         </NavLink>
       </li>
       <li>
-        <NavLink href="#offer" onClick={() => setOpen(!open)}>
+        <NavLink href="#offer" onClick={() => setOpen(!open)} tabIndex={open ? '0' : '-1'}>
           Oferta
         </NavLink>
       </li>
       <li>
-        <NavLink href="#pricing" onClick={() => setOpen(!open)}>
+        <NavLink href="#pricing" onClick={() => setOpen(!open)} tabIndex={open ? '0' : '-1'}>
           Cennik
         </NavLink>
       </li>
     </StyledList>
-    <StyledButton as="a" href="#contact" onClick={() => setOpen(!open)}>
+    <StyledButton
+      as="a"
+      href="#contact"
+      onClick={() => setOpen(!open)}
+      tabIndex={open ? '0' : '-1'}
+    >
       Kontakt
     </StyledButton>
   </StyledMenu>

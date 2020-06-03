@@ -47,10 +47,15 @@ const StyledBurger = styled.button`
 `;
 
 const Burger = ({ open, setOpen }) => (
-  <StyledBurger open={open} onClick={() => setOpen(!open)}>
-    <div />
-    <div />
-    <div />
+  <StyledBurger
+    open={open}
+    onClick={() => setOpen(!open)}
+    aria-label={open ? 'Close the menu' : 'Open the menu'}
+    aria-expanded={open}
+  >
+    <div aria-hidden="true" />
+    <div aria-hidden="true" />
+    <div aria-hidden="true" />
   </StyledBurger>
 );
 
