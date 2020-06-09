@@ -3,7 +3,7 @@ import Pattern from '../../assets/patterns/pattern.inline.svg';
 
 export const PatternRed = styled(Pattern)`
   position: absolute;
-  z-index: 10;
+  z-index: 4;
   top: 0;
   right: 0;
   transform: translateX(calc(50% - 8px));
@@ -33,7 +33,7 @@ export const PatternRed = styled(Pattern)`
 
 export const PatternYellow = styled(Pattern)`
   position: absolute;
-  z-index: 10;
+  z-index: 4;
   bottom: 0;
   left: 0;
   transform: translate(calc(-50% + 8px), 50%);

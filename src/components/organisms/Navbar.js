@@ -11,6 +11,12 @@ const StyledNav = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 3rem 17rem;
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 8;
 
   @media screen and (max-width: ${({ theme }) => theme.screenWidth.medium}) {
     padding: 3rem;

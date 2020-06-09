@@ -6,17 +6,18 @@ import NavLink from '../atoms/NavLink';
 
 const StyledMenu = styled.nav`
   position: fixed;
+  top: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  top: 0;
-  right: 0;
   transition: transform 0.3s ease-in-out;
   width: 100%;
   height: 100vh;
   background: ${({ theme }) => theme.colors.blackTransparent};
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
+  z-index: 5;
 `;
 
 const StyledList = styled.ul`

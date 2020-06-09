@@ -2,14 +2,13 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 import BackgroundImage from 'gatsby-background-image';
-import Navbar from '../organisms/Navbar';
 import Button from '../atoms/Button';
 import { companyName, welcomeText } from '../../data';
 
 const StyledBackgroundImage = styled(BackgroundImage)`
-  position: relative;
-  display: grid;
-  grid-template-rows: auto 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 100vh;
 `;
@@ -69,7 +68,6 @@ const Hero = () => {
 
   return (
     <StyledBackgroundImage Tag="section" fluid={imageData} id="hero">
-      <Navbar />
       <StyledContainer>
         <StyledTitle data-sal="slide-right" data-sal-duration="500">
           {companyName}

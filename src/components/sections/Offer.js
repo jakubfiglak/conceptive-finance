@@ -10,6 +10,7 @@ const StyledSection = styled.section`
   position: relative;
   padding: 10rem 0;
   background: ${({ theme }) => theme.colors.lightGray};
+  z-index: 2;
 `;
 
 const StyledHeading = styled(SectionHeading)`

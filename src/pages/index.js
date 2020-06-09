@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../theme/GlobalStyle';
 import theme from '../theme/theme';
 import SEO from '../components/seo';
@@ -9,18 +9,25 @@ import Offer from '../components/sections/Offer';
 import Pricing from '../components/sections/Pricing';
 import Contact from '../components/sections/Contact';
 import Footer from '../components/sections/Footer';
+import Navbar from '../components/organisms/Navbar';
+
+const StyledMain = styled.main`
+  position: relative;
+  /* z-index: 1; */
+`;
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
     <GlobalStyle />
     <SEO title="Home" />
+    <Navbar />
     <Hero />
-    <main>
+    <StyledMain>
       <About />
       <Offer />
       <Pricing />
       <Contact />
-    </main>
+    </StyledMain>
     <Footer />
   </ThemeProvider>
 );
