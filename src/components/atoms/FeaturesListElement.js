@@ -5,8 +5,9 @@ import CheckYellow from '../../assets/icons/check_yellow.svg';
 const StyledListElement = styled.li`
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: ${({ theme }) => theme.fontSize.s};
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   text-align: center;
 
   &::before {
