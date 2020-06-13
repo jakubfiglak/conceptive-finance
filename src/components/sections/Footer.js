@@ -22,7 +22,7 @@ const StyledLogo = styled.img`
 
 const Footer = () => (
   <StyledFooter>
-    <a href="#hero">
+    <a href="#hero" aria-label="go to top">
       <StyledLogo src={logoBlack} alt="Conceptive Finance Logo" />
     </a>
     <FooterNavList />

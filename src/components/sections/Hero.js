@@ -11,6 +11,11 @@ const StyledBackgroundImage = styled(BackgroundImage)`
   align-items: center;
   width: 100%;
   min-height: 100vh;
+  padding-top: 13rem;
+
+  @media screen and (max-width: ${({ theme }) => theme.screenWidth.small}) {
+    padding-top: 7.2rem;
+  }
 `;
 
 const StyledContainer = styled.div`

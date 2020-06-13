@@ -53,10 +53,16 @@ const FooterContact = () => (
         href="https://www.facebook.com/Conceptive-Finance-109359720793266"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="facebook"
       >
         <FacebookIcon />
       </StyledIconLink>
-      <StyledIconLink href="https://pl.linkedin.com/" target="_blank" rel="noopener noreferrer">
+      <StyledIconLink
+        href="https://pl.linkedin.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="linkedin"
+      >
         <LinkedinIcon />
       </StyledIconLink>
     </StyledIconsWrapper>
