@@ -2,6 +2,24 @@ import React from 'react';
 import { bool, func } from 'prop-types';
 import styled from 'styled-components';
 
+const StyledWrapper = styled.div`
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: ${({ theme }) => theme.colors.primaryTransparent};
+  z-index: 10;
+
+  @media screen and (min-width: ${({ theme }) => theme.screenWidth.small}) {
+    display: none;
+  }
+`;
+
 const StyledBurger = styled.button`
   position: relative;
   display: flex;
@@ -11,7 +29,7 @@ const StyledBurger = styled.button`
   background: 0;
   border: none;
   cursor: pointer;
-  z-index: 10;
+  transform: ${({ open }) => (open ? 'translateX(4px)' : 'translateX(0)')};
 
   &:focus {
     outline: none;
@@ -46,16 +64,18 @@ const StyledBurger = styled.button`
 `;
 
 const Burger = ({ open, setOpen }) => (
-  <StyledBurger
-    open={open}
-    onClick={() => setOpen(!open)}
-    aria-label={open ? 'Close the menu' : 'Open the menu'}
-    aria-expanded={open}
-  >
-    <div aria-hidden="true" />
-    <div aria-hidden="true" />
-    <div aria-hidden="true" />
-  </StyledBurger>
+  <StyledWrapper open={open}>
+    <StyledBurger
+      open={open}
+      onClick={() => setOpen(!open)}
+      aria-label={open ? 'Close the menu' : 'Open the menu'}
+      aria-expanded={open}
+    >
+      <div aria-hidden="true" />
+      <div aria-hidden="true" />
+      <div aria-hidden="true" />
+    </StyledBurger>
+  </StyledWrapper>
 );
 
 Burger.propTypes = {

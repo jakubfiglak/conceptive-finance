@@ -7,6 +7,7 @@ const theme = {
     white: '#ffffff',
     black: '#000000',
     blackTransparent: 'rgb(0,0,0,0.85)',
+    primaryTransparent: 'rgb(255,92,92,0.6)',
   },
   fontSize: {
     xxl: '7.2rem',
