@@ -28,7 +28,7 @@ const StyledButton = styled.button`
   ${({ primary }) =>
     primary &&
     css`
-      border: 0;
+      border: 1px solid ${({ theme }) => theme.colors.primary};
       background-color: ${({ theme }) => theme.colors.primary};
 
       &:hover {
@@ -39,7 +39,7 @@ const StyledButton = styled.button`
   ${({ secondary }) =>
     secondary &&
     css`
-      border: 0;
+      border: 1px solid ${({ theme }) => theme.colors.secondary};
       background-color: ${({ theme }) => theme.colors.secondary};
 
       &:hover {

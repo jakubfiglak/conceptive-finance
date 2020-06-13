@@ -8,6 +8,17 @@ const StyledWrapper = styled.address`
   font-size: ${({ theme }) => theme.fontSize.xs};
   line-height: 2;
   font-style: normal;
+
+  a {
+    display: block;
+    color: ${({ theme }) => theme.colors.black};
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.primary};
+    }
+  }
 `;
 
 const StyledIconsWrapper = styled.div`
@@ -35,15 +46,17 @@ const StyledIconLink = styled.a`
 
 const FooterContact = () => (
   <StyledWrapper>
-    damian@conceptivefinance.pl
-    <br />
-    +48 697-220-330
-    <br />
+    <a href="mailto:damian@conceptivefinance.pl">damian@conceptivefinance.pl</a>
+    <a href="tel:+48697-220-330">+48 697-220-330</a>
     <StyledIconsWrapper>
-      <StyledIconLink href="https://www.facebook.com/Conceptive-Finance-109359720793266">
+      <StyledIconLink
+        href="https://www.facebook.com/Conceptive-Finance-109359720793266"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FacebookIcon />
       </StyledIconLink>
-      <StyledIconLink href="https://pl.linkedin.com/">
+      <StyledIconLink href="https://pl.linkedin.com/" target="_blank" rel="noopener noreferrer">
         <LinkedinIcon />
       </StyledIconLink>
     </StyledIconsWrapper>
