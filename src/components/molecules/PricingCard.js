@@ -36,6 +36,9 @@ const StyledHeading = styled.h3`
 const StyledList = styled.ul`
   list-style: none;
   margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 `;
 
 const StyledPrice = styled.p`

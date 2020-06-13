@@ -60,7 +60,7 @@ const Hero = () => {
       query {
         desktop: file(relativePath: { eq: "hero_gradient.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 1920) {
+            fluid(quality: 80, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }

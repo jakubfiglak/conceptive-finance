@@ -63,7 +63,7 @@ const About = () => {
       query {
         desktop: file(relativePath: { eq: "about.jpg" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 500) {
+            fluid(quality: 90, maxWidth: 500) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }

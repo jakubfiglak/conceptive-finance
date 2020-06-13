@@ -42,6 +42,9 @@ const StyledHeading = styled.h3`
 
 const StyledList = styled.ul`
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 `;
 
 const OfferCard = ({ Icon, title, features, imageData }) => {
