@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import FormControl from '../atoms/FormControl';
 import Button from '../atoms/Button';
+import Modal from './Modal';
 
 const StyledForm = styled.form`
   display: grid;
@@ -20,14 +21,18 @@ const encode = (data) => {
     .join('&');
 };
 
+const initialFormState = {
+  name: '',
+  phone: '',
+  email: '',
+  company: '',
+  text: '',
+};
+
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    company: '',
-    text: '',
-  });
+  const [formData, setFormData] = useState(initialFormState);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [error, setError] = useState('');
 
   const onChange = (e) => {
     const { name, value } = e.target;
@@ -37,8 +42,15 @@ const ContactForm = () => {
     }));
   };
 
+  const handleModal = () => {
+    setModalOpen(true);
+    setTimeout(() => setModalOpen(false), 5000);
+  };
+
   const onSubmit = async (e) => {
     e.preventDefault();
+    handleModal();
+    setFormData(initialFormState);
 
     try {
       await fetch('/', {
@@ -47,9 +59,12 @@ const ContactForm = () => {
         body: encode({ 'form-name': 'contact', ...formData }),
       });
 
-      alert('Success!');
+      setError('');
+      handleModal();
+      setFormData(initialFormState);
     } catch (err) {
-      alert(err);
+      setError(err);
+      handleModal();
     }
   };
 
@@ -114,6 +129,7 @@ const ContactForm = () => {
         required
       />
       <Button primary type="submit" value="wyślij" as="input" />
+      <Modal isOpen={isModalOpen} error={error} />
     </StyledForm>
   );
 };
