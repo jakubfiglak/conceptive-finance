@@ -87,8 +87,8 @@ const ContactInfo = () => (
       </StyledInfoContainer>
       <StyledInfoContainer data-sal="slide-up" data-sal-duration="500" data-sal-delay="200">
         <MailIcon />
-        <a href="mailto:damian@conceptivefinance.pl">
-          <address>damian@conceptivefinance.pl</address>
+        <a href="mailto:damian@kasprzakksiegowosc.pl">
+          <address>damian@kasprzakksiegowosc.pl</address>
         </a>
       </StyledInfoContainer>
     </StyledWrapper>

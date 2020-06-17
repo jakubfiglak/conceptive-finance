@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Conceptive Finance | Usługi Księgowe`,
-    description: `Prowadzenie ksiąg rachunkowych, obsługa kadrowo-płacowa, usługi doradcze`,
-    author: `Conceptive Finance`,
+    description: `Usługi ksiegowe, obsługa kadrowo-płacowa, doradztwo, pomoc w pozyskiwaniu kredytow`,
+    author: `Jakub Figlak <https://github.com/jakubfiglak>`,
     keywords: [
       'biuro rachunkowe luboń',
       'biuro rachunkowe poznań',
@@ -16,6 +16,7 @@ module.exports = {
       'bejmy',
       'spółki',
     ],
+    siteUrl: 'https://www.conceptivefinance.pl/',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

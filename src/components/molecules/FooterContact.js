@@ -46,7 +46,7 @@ const StyledIconLink = styled.a`
 
 const FooterContact = () => (
   <StyledWrapper>
-    <a href="mailto:damian@conceptivefinance.pl">damian@conceptivefinance.pl</a>
+    <a href="mailto:damian@kasprzakksiegowosc.pl">damian@kasprzakksiegowosc.pl</a>
     <a href="tel:+48697-220-330">+48 697-220-330</a>
     <StyledIconsWrapper>
       <StyledIconLink
