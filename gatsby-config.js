@@ -57,15 +57,17 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      resolve: 'gatsby-plugin-webfonts',
       options: {
-        fonts: [
-          {
-            family: 'Lato',
-            subsets: ['latin-ext'],
-            variants: ['400', '600', '700'],
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: 'Lato',
+              subsets: ['latin-ext'],
+              variants: ['400', '600', '700'],
+            },
+          ],
+        },
       },
     },
     'gatsby-plugin-styled-components',
