@@ -42,10 +42,13 @@ const Pricing = () => {
     }
   `);
 
-  const pricingContentWithFile = pricingContent.map((pricing, idx) => ({
-    ...pricing,
-    file: allFile.edges[idx].node.publicURL,
-  }));
+  const kpirPDF = allFile.edges.find((edge) => edge.node.publicURL.includes('KPiR')).node.publicURL;
+  const khPDF = allFile.edges.find((edge) => edge.node.publicURL.includes('KH')).node.publicURL;
+
+  const pricingContentWithFile = [
+    { ...pricingContent[0], file: kpirPDF },
+    { ...pricingContent[1], file: khPDF },
+  ];
 
   return (
     <StyledSection id="pricing">
