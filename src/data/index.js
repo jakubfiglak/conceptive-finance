@@ -25,7 +25,12 @@ export const offerContent = [
   {
     icon: SchoolIcon,
     title: 'Usługi doradcze',
-    features: ['doradztwo', 'umowy', 'rejestracja działalności', 'zakładanie spółek'],
+    features: [
+      'doradztwo',
+      'umowy',
+      'rejestracja działalności',
+      'zakładanie spółek',
+    ],
   },
   {
     icon: ThumbIcon,
@@ -39,7 +44,7 @@ export const pricingContent = [
     icon: PasteIcon,
     title: 'KPiR/Ryczałt',
     features: ['jednoosobowa działalność', 'spółka cywilna'],
-    price: 'już od 200 pln netto miesięcznie',
+    price: 'już od 250 pln netto miesięcznie',
     secondary: false,
   },
   {
