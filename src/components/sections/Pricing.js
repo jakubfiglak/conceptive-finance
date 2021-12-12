@@ -30,20 +30,19 @@ const StyledWrapper = styled.div`
 `;
 
 const Pricing = () => {
-  const { allFile } = useStaticQuery(graphql`
-    {
-      allFile(filter: { extension: { eq: "pdf" } }) {
-        edges {
-          node {
-            publicURL
-          }
-        }
+  const data = useStaticQuery(graphql`
+    query PdfQuery {
+      kh: file(name: { eq: "KH" }) {
+        publicURL
+      }
+      kpir: file(name: { eq: "KPiR" }) {
+        publicURL
       }
     }
   `);
 
-  const kpirPDF = allFile.edges.find((edge) => edge.node.publicURL.includes('KPiR')).node.publicURL;
-  const khPDF = allFile.edges.find((edge) => edge.node.publicURL.includes('KH')).node.publicURL;
+  const kpirPDF = data.kpir.publicURL;
+  const khPDF = data.kh.publicURL;
 
   const pricingContentWithFile = [
     { ...pricingContent[0], file: kpirPDF },
