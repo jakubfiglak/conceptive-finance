@@ -9,7 +9,7 @@ export const companyName = 'conceptive finance';
 export const welcomeText = 'Usługi księgowe, kadrowo-płacowe, doradztwo';
 
 export const aboutText =
-  'Jesteśmy grupą wykwalifikowanych księgowych, którzy zadbają o spokój w finansach Twojej firmy. Kładziemy nacisk na profesjonalizm oraz jakość świadczonych przez nas usług. Pomagamy w założeniu firmy. Zapewniamy pełną obsługę finansowo-ksiegową oraz kadrowo-płacową podmiotów gospodarczych, niezależnie od formy prawnej. Naszym klientom oferujemy doradztwo w kwestiach podatkowych i biznesowych oraz pomagamy w pozyskiwaniu kredytów. Każdy klient otrzymuje wsparcie i możliwośc indywidualnych konsultacji. Przejmujemy na siebie pełnię kwestii księgowo - podatkowych tak, aby klient mógł w pełni skupić się na prowadzeniu biznesu.';
+  'Jesteśmy grupą wykwalifikowanych księgowych, którzy zadbają o spokój w finansach Twojej firmy. Kładziemy nacisk na profesjonalizm oraz jakość świadczonych przez nas usług. Pomagamy w założeniu firmy. Zapewniamy pełną obsługę finansowo-ksiegową oraz kadrowo-płacową podmiotów gospodarczych, niezależnie od formy prawnej. Naszym klientom oferujemy doradztwo w kwestiach biznesowych oraz pomagamy w pozyskiwaniu kredytów. Każdy klient otrzymuje wsparcie i możliwośc indywidualnych konsultacji. Przejmujemy na siebie pełnię kwestii księgowo - podatkowych tak, aby klient mógł w pełni skupić się na prowadzeniu biznesu.';
 
 export const offerContent = [
   {
